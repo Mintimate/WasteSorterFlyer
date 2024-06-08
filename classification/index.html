@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>垃圾分类-公益未来</title>
+  <link rel="apple-touch-icon" sizes="76x76" href="/custom/img/favicon.svg">
+  <link rel="icon" href="/custom/img/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  bootstrap CSS-->
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css">
+  <!--  JQ-->
+  <script type="text/javascript" src="../public/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+  <!--  bootstrap JS-->
+  <script type="text/javascript" src="../public/bootstrap/js/bootstrap.min.js"></script>
+  <!--  shard-->
+  <link rel="stylesheet" href="../public/shards/css/shards.min.css">
+  <!--  shard JS-->
+  <script type="text/javascript" src="../public/shards/js/shards.min.js"></script>
+  <!--  custom CSS-->
+  <link rel="stylesheet" href="../custom/css/framework/main.css">
+  <link rel="stylesheet" href="../custom/css/classification.css">
+  <!--  icon-->
+  <script type="text/javascript" src="//at.alicdn.com/t/font_2570305_dfn46d5k7zq.js"></script>
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_2319560_p8ctbyrcm9p.css">
+  <!--  干物妹小埋-->
+  <link rel="stylesheet" href="../custom/css/xm.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="#">Mintimate</a>
+    <span id="#navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon--"></use>
+      </svg>    </span>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">主页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/classification">垃圾分类</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/significance">环境意义</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/publicOpinion">民众观点</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/personalInitiative">个人怎么做</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <i id="nightMode" class="nav-link iconfont icon-zhishifufeiqiapianicon-"></i>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/charityAD">公益广告</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:mintimate215@gmail.com">反馈</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <i onclick="switchNightMode()" id="xm"></i>
+  <script type="text/javascript" src="../custom/js/autoDark.js"></script>
+  <div class=" banner container-fluid" id="banner" parallax="true"
+       style="background: url('../custom/img/index/star.jpg') center center / cover no-repeat;
+        transform: translate3d(0px, 0px, 0px);">
+    <div class=" full-bg-img row ">
+      <div id="bannerTittle" class="mask flex-center page-header col-md-12 center ">
+        <!--          <h2 id="subtitle" title="Mintimate's Blog 为你我贡献经验">Mintimate's Blog 为你我贡献经验&nbsp;</h2>-->
+        <!--        <img src="img/index/rubbish.svg" class="img-fluid">-->
+        <h2 class="display-2">垃圾分类<br/>变废为宝</h2>
+        <img src="../custom/img/emjoy/haha.png" /></div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="container-fluid nopadding-x">
+    <div class="row nomargin-x">
+      <div class="d-none d-lg-block col-lg-2"></div>
+      <div class="col-lg-8 nopadding-x-md">
+        <div class="container nopadding-x-md" id="board-ctn">
+          <div class="py-5" id="board">
+            <article class="post-content mx-auto">
+              <h1>
+                垃圾分类
+              </h1>
+              <hr/>
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-squared" type="button" data-toggle="collapse" data-target="#collapseOne"
+                              aria-expanded="true" aria-controls="collapseOne">
+                        可回收垃圾
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                       data-parent="#accordionExample">
+                    <div class="card-body">
+                      <img src="../custom/img/classification/recoverableRubbish.jpeg" class="img-fluid"/>
+                      <p><strong>大体包括</strong></p>
+                      <span>可回收垃圾是一种可回收的垃圾分类。一般的可回收垃圾可分为下列数种：</span>
+                      <ul>
+                        <li>塑胶</li>
+                        <ul>
+                          <li>PET</li>
+                          <li>HDPE</li>
+                          <li>LDPE</li>
+                        </ul>
+                        <li>金属</li>
+                        <ul>
+                          <li>铁（铁罐和其他铁制品）</li>
+                          <li>非铁金属（铝罐、铜片和其他金属制品)</li>
+                        </ul>
+                        <li>玻璃（回收制成新的玻璃容器或当做粒料）</li>
+                        <li>纸（可直接回收的可生物降解废物）</li>
+                        <li>可生物降解废物，可以用做堆肥或生化气体</li>
+                      </ul>
+                      <p><strong>具体详情</strong></p>
+                      <ul>
+                        <li>废纸张</li>
+                        <ul>
+                          <li>平面纸张：书本、报纸、复印纸、宣传单、包装纸、信封、硬纸板等</li>
+                          <li>纸盒（箱）：纸板箱、包装盒（如点心盒、纸巾盒）、牛奶（饮料）包装等</li>
+                        </ul>
+                      </ul>
+                      <ul>
+                        <li>废塑料</li>
+                        <ul>
+                          <li>瓶类：PET塑料瓶（矿泉水瓶、饮料瓶）、硬质塑料瓶、塑料油桶、乳液罐等；</li>
+                          <li>其他容器类：塑料盒（如冰激凌盒）、塑料杯（如酸奶杯、果冻杯）、软桶、塑料衣架、塑料玩具等；</li>
+                          <li>包装类：塑料袋、保鲜袋（膜）、包装袋（如零食包装袋、快递包装袋）、
+                            塑料泡沫、气泡缓冲材料、水果网套、热饮（如咖啡杯）杯盖等；
+                          </li>
+                          <li>其他塑料制品：废弃塑料文具等。</li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="DryRefuse">
+                    <h2 class="mb-0">
+                      <button class="btn btn-squared text-left collapsed" type="button" data-toggle="collapse"
+                              data-target="#collapseDryRefuse" aria-expanded="false" aria-controls="collapseThree">
+                        干垃圾
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseDryRefuse" class="collapse" aria-labelledby="DryRefuse"
+                       data-parent="#accordionExample">
+                    <div class="card-body">
+                      <img src="../custom/img/classification/dryRefuse.jpeg" class="img-fluid w-100"/>
+                      干垃圾即其它垃圾，指除可回收物、有害垃圾、湿垃圾以外的其它生活废弃物。
+                      <strong>干垃圾包括废弃的纸张、塑料、玻璃、烟头、 金属、织物等，还包括报废车辆、家电家具、装修废弃物等大型的垃圾。</strong>
+                      有害有毒垃圾必须单独收集、运输、存贮，由环保部门认可的专业机构进行特殊安全处理。
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-squared text-left collapsed" type="button" data-toggle="collapse"
+                              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        湿垃圾（厨余垃圾）
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <img src="../custom/img/classification/kitchenGarbage.jpeg" class="img-fluid"/>
+                      湿垃圾（英文名称：organic waste）又称为厨余垃圾、有机垃圾，即易腐垃圾，指食材废料、剩菜剩饭、过期食品、瓜皮果核、花卉绿植、中药药渣等易腐的生物质生活废弃物。
+                      <br/>
+                      湿垃圾是居民日常生活及食品加工、饮食服务、单位供餐等活动中产生的垃圾，
+                      <strong>包括丢弃不用的菜叶、剩菜、剩饭、果皮、蛋壳、茶渣、骨头、动物内脏、鱼鳞、树叶、杂草等，</strong>
+                      其主要来源为家庭厨房、餐厅、饭店、食堂、市场及其他与食品加工有关的行业。<br/>
+                      厨余垃圾的特点之一是非常容易腐败、腐烂，会受到天气影响，比如太阳暴晒和大雨之后，
+                      会加快厨余垃圾的发酵，产生让人难以忍受的气味，存放一两天后外观看起来也极其令人恶心。
+                      <br/>
+                      <strong>厨余垃圾产生臭气的主要成分是硫化氢、氨气、甲硫醇、甲胺、甲基硫等。这些气体挥发性大，易扩散，刺激性气味大，污染大气，对人体也有害。因此要单独与其他垃圾分离出来处理</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-squared text-left collapsed" type="button" data-toggle="collapse"
+                              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        有害垃圾
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                       data-parent="#accordionExample">
+                    <div class="card-body">
+                      <img src="../custom/img/classification/harmfulWaste.jpeg" class="img-fluid w-100"/>
+                      有害垃圾是指存有对人体健康有害的重金属、有毒的物质或者对环境造成现实危害或者潜在危害的废弃物。
+                      <strong>包括废电池、废荧光灯管、废灯泡、废水银温度计、废油漆桶、废家电类、过期药品、过期化妆品等。</strong>
+                      有害有毒垃圾必须单独收集、运输、存贮，由环保部门认可的专业机构进行特殊安全处理。
+                      <br/>
+                      现行工艺制作的节能灯中大都含有化学元素汞，一只普通节能灯约含有0.5毫克汞，如果1毫克汞渗入地下，就会造成360吨的水污染。
+                      汞也会以蒸气的形式进入大气，一旦空气中的汞含量超标，会对人体造成危害，长期接触过量汞可造成中毒。
+                      水俣病就是慢性汞中毒最典型的公害病之一。
+                      而大多数药品过期后容易分解、蒸发，散发出有毒气体，造成室内环境污染，严重时还会对人体呼吸道产生危害。
+                      过期药品若是随意丢弃，会造成空气、土壤和水源环境的污染。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <hr/>
+            <hr/>
+            <article class="post-content mx-auto">
+              <h1>
+                注解视频
+              </h1>
+              <hr/>
+              <div class="accordion" id="accordionVideos">
+                <div class="card">
+                  <div class="card-header" id="headinVideosgOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-squared" type="button" data-toggle="collapse"
+                              data-target="#collapseVideosOne" aria-expanded="true" aria-controls="collapseVideosOne">
+                        让我用Rap的方式教大家垃圾分类！
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div id="collapseVideosOne" class="collapse" aria-labelledby="headinVideosgOne"
+                       data-parent="#accordionVideos">
+                    <div class="card-body">
+                      <iframe class="bilibili"
+                              src="//player.bilibili.com/player.html?aid=57487074&bvid=BV1hx411X7gR&cid=100359518&page=1"
+                              scrolling="no" border="0" frameborder="no" framespacing="0"
+                              allowfullscreen="true"></iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingVideoTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-squared text-left collapsed" type="button" data-toggle="collapse"
+                              data-target="#collapseVideoTwo" aria-expanded="false" aria-controls="collapseVideoTwo">
+                        3分钟回答你对垃圾分类的所有疑问
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseVideoTwo" class="collapse" aria-labelledby="headingVideoTwo"
+                       data-parent="#accordionVideos">
+                    <div class="card-body">
+                      <iframe class="bilibili"
+                              src="//player.bilibili.com/player.html?aid=57684826&bvid=BV1q4411w7s7&cid=100691709&page=1"
+                              scrolling="no" border="0" frameborder="no" framespacing="0"
+                              allowfullscreen="true"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <a id="scroll-top-button" href="#" role="button" style="bottom: -60px; right: 195.344px;">
+    <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+  </a>
+
+
+  <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+          <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <input type="text" id="local-search-input" class="form-control validate">
+            <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+          </div>
+          <div class="list-group" id="local-search-result"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>
+</body>
+</html>

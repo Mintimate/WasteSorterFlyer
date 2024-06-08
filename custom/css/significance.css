@@ -1,0 +1,54 @@
+[data-user-color-scheme="light"]{
+  --content-text-color: #424242;
+  --content-h1-color:#212529;
+  --content-h2-color: #2c3034;
+
+}
+[data-user-color-scheme="dark"]{
+  --content-text-color: #afaeae;
+  --content-h1-color: #c6c4c4;
+  --content-h2-color: #bfbebe;
+
+}
+.post-content,
+post-custom {
+  box-sizing: border-box;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media (max-width: 767px) {
+  .post-content,
+  post-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (max-width: 424px) {
+  .post-content,
+  post-custom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.post-content p{
+  color: var(--content-text-color);
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  -moz-text-size-adjust: 100%;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.post-content h1{
+  color: var(--content-h1-color);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.post-content h2{
+  color: var(--content-h2-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+

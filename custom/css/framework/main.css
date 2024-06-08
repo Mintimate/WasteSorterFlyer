@@ -1,0 +1,219 @@
+[data-user-color-scheme="light"]{
+  --card-color: #ffffff;
+  --board-bg-color: #ffffff;
+  --text-color: #424242;
+  --second-text-color:#000;
+  --hr--color:#E5E5E5;
+  --h2--color:#E0E0E0;
+  --html-background-color: #E9ECEF;
+  --brightness--:brightness(1);
+}
+[data-user-color-scheme="dark"]{
+  --card-color: #424242;
+  --board-bg-color: #424242;
+  --text-color: #E0E0E0;
+  --second-text-color:#fff;
+  --hr--color: #555252;
+  --h2--color: rgba(224, 224, 224, 0.75);
+  --html-background-color: #424242;
+  --brightness--:brightness(0.75);
+}
+
+html{
+  background-color: var(--html-background-color);
+}
+body{
+  background-color: var(--html-background-color);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  vertical-align: baseline;
+}
+
+/*RGB滚动条*/
+::-webkit-scrollbar{
+  background: linear-gradient( #0055ff,#ff7491,#dc3545);
+}
+
+::-webkit-scrollbar {
+  width: .5rem;
+  height: .8rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #90a1ad;
+}
+/*RGB滚动条 END*/
+
+hr{
+  background-color: var(--hr--color);
+}
+.icon {
+  width: 2em; height: 2em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+img {
+  filter: var(--brightness--);
+}
+@font-face {
+  font-family: 'subtitle';     /* 这个名字可以自己定义 */
+  /* Modern Browsers */
+  src: url('../../font/subtitle.ttf');
+  /* Legacy iOS */
+  font-weight: bold;
+  font-style: normal;
+}
+main{
+  background-color: var(--board-bg-color);
+}
+body,h5{
+  color: var(--text-color);
+}
+.btn-outline-black{
+  background-color: transparent;
+  background-image: none;
+  border-color: var(--second-text-color);
+  color: var(--second-text-color);
+}
+.card {
+  background-color: var(--card-color);
+  border: none;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+
+}
+
+.display-2 {
+  font-size: 2.5rem;
+}
+#bannerTittle img{
+  height: 7rem;
+}
+@media (min-width: 575px) {
+  .display-2 {
+    font-size: 3.5rem;
+  }
+  #bannerTittle img{
+    height: 10rem;
+  }
+}
+@media (min-width: 767px) {
+
+  .display-2 {
+    font-size: 5.96rem;
+  }
+  #bannerTittle img{
+    height: 15rem;
+  }
+}
+#bannerTittle .display-2{
+  color: var(--h2--color);
+  font-family: subtitle;
+}
+.navbar a{
+  color: #E0E0E0;
+}
+#board {
+  position: relative;
+  margin-top: -2rem;
+  background-color: var(--board-bg-color);
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+  z-index: 3;
+  -webkit-box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.index-card {
+  margin-bottom: 2.5rem;
+}
+.index-img img {
+  display: block;
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  border-radius: 0.25rem;
+}
+.index-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.index-header {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.25rem;
+}
+.index-header .index-pin {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-right: 0.15rem;
+}
+.banner {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  overflow-wrap: break-word;
+}
+
+.flex-center {
+  /* display: -webkit-box; */
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.banner .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.banner .page-header {
+  padding-top: 70px;
+  /*opacity: 0.75;*/
+}
+
+html,
+body,
+header {
+  height: 100%;
+  overflow-wrap: break-word;
+}
+
+@supports (-webkit-backdrop-filter: blur(3px)) or (backdrop-filter: blur(3px)) {
+  .navbar {
+    color: #ffffff;
+    background: rgba(47, 65, 84, 0.7);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  }
+}
+
+@supports not ((-webkit-backdrop-filter: blur(3px)) or (backdrop-filter: blur(3px))) {
+  .navbar {
+    color: #ffffff;
+    background: #2f4154;
+  }
+}

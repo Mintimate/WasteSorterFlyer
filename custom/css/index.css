@@ -1,0 +1,10 @@
+
+/*居中显示Start*/
+.center {
+  text-align: center;
+}
+.center > div, .center > table /* insert any other block-level elements here */ {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*居中显示End*/

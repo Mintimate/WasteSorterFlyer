@@ -1,0 +1,18 @@
+#xm {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 91px;
+  height: 79px;
+  transform: translate(0,30px);
+  background: url(../img/zj.png);
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  z-index: 999;
+}
+
+#xm:hover {
+  transform: translateY(0)
+}

@@ -1,0 +1,15 @@
+[data-user-color-scheme="light"]{
+  --h2-color:#424242;
+  --card-header-color:#F5F6F6;
+
+}
+[data-user-color-scheme="dark"]{
+  --h2-color:#ffffff;
+  --card-header-color: #6d6f6f;
+}
+h2{
+  color: var(--h2-color);
+}
+.card-header{
+  background-color: var(--card-header-color);
+}

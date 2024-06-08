@@ -1,0 +1,84 @@
+[data-user-color-scheme="light"]{
+  --content-text-color: #424242;
+  --content-h1-color:#212529;
+  --content-h2-color: #2c3034;
+
+}
+[data-user-color-scheme="dark"]{
+  --content-text-color: #afaeae;
+  --content-h1-color: #c6c4c4;
+  --content-h2-color: #bfbebe;
+
+}
+.post-content h1{
+  color: var(--content-h1-color);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.post-content h2{
+  color: var(--content-h2-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.post-content,
+post-custom {
+  box-sizing: border-box;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.btn{
+  color: #ff7491;
+}
+.btn:hover{
+  color: #fa2a4c;
+}
+@media (max-width: 767px) {
+  .post-content,
+  post-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (max-width: 424px) {
+  .post-content,
+  post-custom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/*哔哩哔哩视频适配*/
+.bilibili {
+  position: relative;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .bilibili {
+    height: 15em;
+    max-width: 25em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .bilibili {
+    height: 20em;
+    max-width: 30em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .bilibili {
+    height: 30em;
+    max-width: 40em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bilibili {
+    height: 40em;
+    max-width: 50em;
+  }
+}
